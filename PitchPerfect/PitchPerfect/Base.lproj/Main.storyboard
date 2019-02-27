@@ -18,20 +18,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9d-Jc-zmr">
-                                <rect key="frame" x="110" y="233" width="155" height="155"/>
+                                <rect key="frame" x="110" y="169" width="155" height="155"/>
                                 <state key="normal" image="RecordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dxO-aU-qch"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to recored" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASW-XL-uZW">
-                                <rect key="frame" x="132" y="408" width="111" height="21"/>
+                                <rect key="frame" x="132" y="357" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxC-1A-T62">
-                                <rect key="frame" x="155.5" y="443" width="64" height="64"/>
+                                <rect key="frame" x="155.5" y="443.5" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="7Sv-4f-R0S"/>
                                     <constraint firstAttribute="width" constant="64" id="lRg-wp-aAW"/>
@@ -44,11 +44,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ASW-XL-uZW" firstAttribute="top" secondItem="h9d-Jc-zmr" secondAttribute="bottom" constant="20" id="7u4-Fg-9Vq"/>
+                            <constraint firstItem="ASW-XL-uZW" firstAttribute="top" secondItem="h9d-Jc-zmr" secondAttribute="bottom" constant="33" id="7u4-Fg-9Vq"/>
                             <constraint firstItem="ASW-XL-uZW" firstAttribute="centerX" secondItem="h9d-Jc-zmr" secondAttribute="centerX" id="VVP-xq-uHt"/>
-                            <constraint firstItem="mxC-1A-T62" firstAttribute="top" secondItem="h9d-Jc-zmr" secondAttribute="bottom" constant="55" id="YGd-UK-D4d"/>
+                            <constraint firstItem="mxC-1A-T62" firstAttribute="top" secondItem="h9d-Jc-zmr" secondAttribute="bottom" constant="119.5" id="YGd-UK-D4d"/>
                             <constraint firstItem="mxC-1A-T62" firstAttribute="centerX" secondItem="h9d-Jc-zmr" secondAttribute="centerX" id="cKa-80-ONF"/>
-                            <constraint firstItem="h9d-Jc-zmr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-55" id="e2C-1S-61k"/>
+                            <constraint firstItem="h9d-Jc-zmr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-119" id="e2C-1S-61k"/>
                             <constraint firstItem="h9d-Jc-zmr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fj1-kn-VFj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -82,11 +82,6 @@
                                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hoh-nP-zie" userLabel="Slow Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="171.5"/>
                                                 <state key="normal" image="Slow"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                        <integer key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="cGa-fZ-SZJ" eventType="touchUpInside" id="kpJ-Vg-1Yh"/>
                                                 </connections>
@@ -94,11 +89,6 @@
                                             <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWC-NE-jkL" userLabel="Fast Button">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="171.5"/>
                                                 <state key="normal" image="Fast"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                        <integer key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="cGa-fZ-SZJ" eventType="touchUpInside" id="IYb-z3-LEx"/>
                                                 </connections>
@@ -111,11 +101,6 @@
                                             <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARe-MC-7LJ" userLabel="High Pitch Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="172"/>
                                                 <state key="normal" image="HighPitch"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                        <integer key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="cGa-fZ-SZJ" eventType="touchUpInside" id="iJA-WM-RG1"/>
                                                 </connections>
@@ -123,11 +108,6 @@
                                             <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9S-w1-vz2" userLabel="Low Pitch Button">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="172"/>
                                                 <state key="normal" image="LowPitch"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                        <integer key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="cGa-fZ-SZJ" eventType="touchUpInside" id="9vM-r7-t43"/>
                                                 </connections>
@@ -140,11 +120,6 @@
                                             <button opaque="NO" tag="4" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mc-1Z-gvf" userLabel="Echo Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="171.5"/>
                                                 <state key="normal" image="Echo"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                        <integer key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="cGa-fZ-SZJ" eventType="touchUpInside" id="lpL-BT-Vnn"/>
                                                 </connections>
@@ -152,11 +127,6 @@
                                             <button opaque="NO" tag="5" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scg-EQ-1lP" userLabel="Reverb Button">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="171.5"/>
                                                 <state key="normal" image="Reverb"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
-                                                        <integer key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="cGa-fZ-SZJ" eventType="touchUpInside" id="f2T-bd-81T"/>
                                                 </connections>
